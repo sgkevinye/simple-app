@@ -14,7 +14,7 @@ steps:
   inputs:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'rosademo1'
-    cmd: 'oc project myapp'
+    cmd: 'oc project azuredevops'
   displayName: Switch to myapp project
 - task: oc-cmd@3
   inputs:
