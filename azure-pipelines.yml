@@ -7,15 +7,15 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 steps:
 - task: oc-cmd@3
   inputs:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'rosademo1'
-    cmd: 'oc project azuredevops'
-  displayName: Switch to myapp project
+    cmd: 'oc project azuredevops1'
+  displayName: Switch to azuredevops1 project
 - task: oc-cmd@3
   inputs:
     connectionType: 'OpenShift Connection Service'
